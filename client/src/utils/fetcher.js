@@ -1,10 +1,8 @@
-import axios from 'axios';
-
-
+import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'http://localhost:8080/api',
-    withCredentials : true
+  baseURL: "https://fyp-be-theta.vercel.app/api",
+  withCredentials: true,
 });
 
 export default api;
