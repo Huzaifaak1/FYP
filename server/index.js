@@ -30,15 +30,9 @@ app.use(
     origin: 'https://fyp-fe-phi.vercel.app',
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
+    optionSuccessStatus:200
   })
 );
-
-app.options('*', cors({
-  origin: 'https://fyp-fe-phi.vercel.app',
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
-  credentials: true,
-}));
-
 
 app.use(cookieParser());
 app.use(express.json());
