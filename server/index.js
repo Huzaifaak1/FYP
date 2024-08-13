@@ -27,7 +27,7 @@ mongoose
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:5500","https://fyp-be-theta.vercel.app/"],
+    origin: ["http://localhost:3000", "http://localhost:5500","https://fyp-be-theta.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   })
