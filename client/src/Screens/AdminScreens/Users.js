@@ -15,7 +15,7 @@ export default function AdminUsers() {
     }, [])
 
     const loadUsers = async () => {
-        const { data } = await api.get('/admin/users');
+        const { data } = await api.get('/admin/users/');
         if (data.status) {
             setUsers(data.users)
         }
