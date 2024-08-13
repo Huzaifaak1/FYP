@@ -27,10 +27,10 @@ mongoose
 
 app.use(
   cors({
-    origin: 'https://fyp-fe-phi.vercel.app',
+    origin: ['https://fyp-fe-phi.vercel.app'],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
-    optionSuccessStatus:200
+    // optionSuccessStatus:200
   })
 );
 
