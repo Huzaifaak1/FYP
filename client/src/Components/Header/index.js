@@ -38,7 +38,7 @@ export default function Header() {
 
     return <Box>
         {/* Nav*/}
-        <Box id={'navbar'} pt={4} display={'flex'} alignItems={'center'} justifyContent={'space-between'} w={'100%'} p={14} >
+        <Box id={'navbar'} pt={4} display={'flex'} alignItems={'center'} justifyContent={'space-between'} w={'100%'} p={14}  >
             {/* Social Icons */}
             <img src={SocialIcons} style={{ height: 30 }} />
             <Box mt={isMobile ? '1em' : null} id={'nav-center'}
