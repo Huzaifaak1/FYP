@@ -39,7 +39,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/static", express.static(path.join(__dirname, "/public/images")));
 
 app.get("/", (req, res) => {
-  res.send("Working!");
+  res.json({ message: "Worked!" });
 });
 
 app.use("/api/filter/", filterRoute);
